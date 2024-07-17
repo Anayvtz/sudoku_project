@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: arial;
+    background-color: #f0f0f0;
+}
+
+.sudoku {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(9, 40px);
+    gap: 1px;
+    border: 1px solid #ccc;
+
+}
+
+.grid input {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.grid input:focus {
+    background-color: lightyellow;
+}
+
+/* .grid input::placeholder {
+    color: #ccc;
+} */
+
+/* .grid div:nth-child(3n),
+.grid div:nth-child(6n) {
+    border-right: 2px solid #ccc;
+}
+
+.grid div:nth-child(9n) {
+    border-right: none;
+}
+
+.grid div:nth-child(n+19):nth-child(-n+27),
+.grid div:nth-child(n+46):nth-child(-n+54) {
+    border-bottom: 2px solid #ccc;
+}
+
+.grid div:nth-child(n+73):nth-child(-n+81) {
+    border-bottom: none;
+} */
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#load {
+    margin-right: none;
+}
+
+#status {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* .grid div:nth-child(3n),
+.grid div:nth-child(6n),
+.grid div:nth-child(9n),
+.grid div:nth-child(n+19):nth-child(-n+27),
+.grid div:nth-child(n+46):nth-child(-n+54),
+.grid div:nth-child(n+73):nth-child(-n+81) {
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+} */
