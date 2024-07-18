@@ -169,13 +169,13 @@ let solveBtn = document.getElementById("solve");
 solveBtn.addEventListener("click", solveSudoku);
 
 let restartBtn = document.getElementById("restart");
-restartBtn.addEventListener("click", sudoku.restartGame);
+restartBtn.addEventListener("click", () => { sudoku.restartGame(); });
 
 let saveBtn = document.getElementById("save");
-saveBtn.addEventListener("click", sudoku.saveToLocalStorage);
+saveBtn.addEventListener("click", () => { sudoku.saveToLocalStorage(); });
 
 let loadBtn = document.getElementById("load");
-loadBtn.addEventListener("click", sudoku.loadFromLocalStorage);
+loadBtn.addEventListener("click", () => { sudoku.loadFromLocalStorage(); });
 
 function solveSudoku() {
     if (sudoku.solve()) {

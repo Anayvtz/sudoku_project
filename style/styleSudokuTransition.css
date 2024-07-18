@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgBtnHover: #00a2ff;
+    --clrBtnHoover: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: grey;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    height: 64px;
+    background-color: grey;
+    width: 100%;
+    color: lightskyblue;
+    z-index: 1;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+#personalImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header h4 {
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.hamburger {
+    font-size: 1.4em;
+    color: black;
+    padding: 5px 8px;
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    color: lightskyblue;
+    width: 100px;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 2;
+    text-align: center;
+}
+
+#mainSection {
+    position: relative;
+    padding: 16px;
+    text-align: center;
+    margin-top: 64px;
+    line-height: 1.5;
+    background-image: url("./../../../images/wave.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mainSection h2 {
+    color: lightskyblue;
+    font-size: 3em;
+}
+
+#mainSection p {
+    color: lightskyblue;
+    font-size: 1.1em;
+    line-height: 1.5;
+    font-family: "Poetsen One";
+}
+
+#watchProj {
+    display: flex;
+    justify-content: center;
+}
+
+#mainSection div a {
+    display: block;
+    width: 150px;
+    padding: 10px 15px;
+    background-color: black;
+    color: grey;
+    text-decoration: none;
+    margin: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#mainSection a:hover {
+    background-color: var(--bgBtnHover);
+    color: var(--clrBtnHoover);
+}
+
+#icons {
+    background-color: white;
+    text-align: center;
+}
+
+#icons img {
+    width: 60px;
+    height: 60px;
+}
+
+#projPic img {
+    width: 70vw;
+    height: 70vh;
+    display: block;
+    margin: 50px auto;
+}
+
+footer {
+    margin: 15px;
+    background-color: #fff;
+    border-top: 1px solid #000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin-top: 30 px;
+}
+
+footer a img {
+    width: 40px;
+    height: 40px;
+}
+
+#gmail img {
+    width: 30px;
+    height: 30px;
+}
+
+.scrollStop {
+    position: absolute;
+    top: -64px;
+}
+
+@media (max-width:576px) {
+    .hamburger {
+        display: flex;
+        width: 40px;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    nav ul {
+        display: none;
+        background-color: grey;
+        color: lightskyblue;
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+
+    nav ul li a:hover {
+        background-color: var(--bgBtnHover);
+        color: var(--clrBtnHoover);
+    }
+
+    nav .hamburger:hover+ul,
+    nav ul:hover {
+        display: flex;
+    }
+
+    .breakMobile {
+        flex-direction: column;
+    }
+
+}
